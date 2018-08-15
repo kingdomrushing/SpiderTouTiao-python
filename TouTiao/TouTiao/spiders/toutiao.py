@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import json
-from multispiders.items import MultispidersItem
+from TouTiao.items import ToutiaoItem
 from urllib.parse import urlencode
 import re
 import urllib.request
