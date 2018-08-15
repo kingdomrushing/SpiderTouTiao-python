@@ -23,7 +23,7 @@ def get_page_index(start_url,offset, keyword):
 class ToutiaoSpider(scrapy.Spider):
     name = 'toutiao'
     allowed_domains = ['toutiao.com']
-    keyword = "丽水山耕"
+    keyword = "西湖"
     offset = 0
     start_url = 'https://www.toutiao.com/search_content/?'
     url = get_page_index(start_url, offset, keyword)
