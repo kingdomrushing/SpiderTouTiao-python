@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import json
-from multispiders.items import MultispidersItem
+from TouTiao.items import ToutiaoItem
 from urllib.parse import urlencode
 import re
 import urllib.request
@@ -34,7 +34,7 @@ class ToutiaoSpider(scrapy.Spider):
         dic = json.loads(response.text)
         if dic and 'data' in dic.keys():
             for node in dic.get('data'):
-                item = MultispidersItem()
+                item = ToutiaoItem()
                 try:
                     item['theme'] = node.get("title")
                     item['comments_count'] = node.get("comments_count")
