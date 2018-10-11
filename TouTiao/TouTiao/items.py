@@ -12,6 +12,7 @@ class ToutiaoItem(scrapy.Item):
     # define the fields for your item here like:
     theme = scrapy.Field()
     comments_count=scrapy.Field()
+    platform=scrapy.Field()
     url=scrapy.Field()
     content = scrapy.Field()
     datetime=scrapy.Field()
